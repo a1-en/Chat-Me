@@ -9,7 +9,6 @@
   scrollbar-color: #007bff #f4f7f6;
 }
 
-/* Custom scrollbar for webkit browsers */
 .chat-body::-webkit-scrollbar {
   width: 6px;
 }

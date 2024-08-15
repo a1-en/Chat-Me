@@ -1,4 +1,3 @@
-// MessageList.js
 import React from "react";
 import Message from "./Message";
 import "./MessageList.css";

@@ -1,4 +1,3 @@
-// ChatHeader.js
 import React from "react";
 import "./ChatHeader.css";
 

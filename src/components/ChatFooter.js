@@ -1,4 +1,3 @@
-// ChatFooter.js
 import React, { useState } from "react";
 import "./ChatFooter.css";
 
@@ -12,6 +11,12 @@ const ChatFooter = ({ sendMessage }) => {
     }
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSendClick();
+    }
+  };
+
   return (
     <div className="chat-footer">
       <input
@@ -19,6 +24,7 @@ const ChatFooter = ({ sendMessage }) => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Type a message"
+        onKeyPress={handleKeyPress}
       />
       <button onClick={handleSendClick}>
         <i className="fas fa-paper-plane"></i>
